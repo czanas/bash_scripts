@@ -1,0 +1,17 @@
+
+--This is the first README.MD given by git-- 
+--Keeping it here to remember how to do things--
+
+create a new repository on the command line
+
+echo "# bash_scripts" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/czanas/bash_scripts.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/czanas/bash_scripts.git
+git push -u origin master
