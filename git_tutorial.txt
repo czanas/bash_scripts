@@ -15,7 +15,16 @@ git remote add origin ssh://usrname@site:port/path/to/repo/to/create/
 
 git push -u origin master
 
-…or push an existing repository from the command line
 
+…or push an existing repository from the command line
 git remote add origin https://github.com/czanas/bash_scripts.git
 git push -u origin master
+
+###creating a remote repo###
+cd folder
+git init
+git remote add origin ssh://u@h:p/path
+git add .
+git commit -m 'message'
+git push -u origin master
+
