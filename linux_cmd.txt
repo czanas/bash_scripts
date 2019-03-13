@@ -5,5 +5,11 @@ ufw #firewall
 fail2ban
 tmux
 
-
 #testing git clone 
+
+
+#ssh key generation
+ssh-keygen -t rsa -b 4096 -C "email@email.com" 
+#this will generate public and private ssh key. 
+#You can use the public key for authentication in
+# ~/.ssh/id_rsa.pub
