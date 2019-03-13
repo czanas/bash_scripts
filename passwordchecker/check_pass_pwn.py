@@ -54,10 +54,11 @@ def main():
         uPass = str(args[1]); 
         sha1Pass = hashlib.sha1(uPass.encode('ASCII'))
         sha1PassHex = sha1Pass.hexdigest()
-        print("args: %s, %s" % (args[0], args[1]))
+        print("Password: %s" % uPass)
         print("SHA1: %s" % sha1PassHex)
+        print("Checking first 5 SHA1 characters (%s) vs haveibeenpwnd database" % sha1PassHex[0:5])
         pwnedVal = subPwnPass(sha1PassHex, False)
-        print("Password pwned %s times" % pwnedVal)
+        print("Password has been pwned %s times" % pwnedVal)
 
 #run main program
 main()
