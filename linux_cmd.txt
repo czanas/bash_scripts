@@ -2,7 +2,10 @@ Useful Linux commands that I often use.
 
 #Useful Server Tools to have
 ufw #firewall
+    ufw status numbered
+    ufw delete [NUMBER]
 fail2ban
+    fail2ban-client set JAILNAMEHERE unbanip IPADDRESSHERE
 tmux
 
 #testing git clone 
