@@ -99,7 +99,7 @@ function genericCurlPost($params, $url)
 }
 
 /*Auxillary function for making DELETE requests*/
-protected function httpDiscordDelete($params, $url)
+protected function genericCurlDelete($params, $url)
 {
     $postData = '';
     //create name value pairs seperated by &
