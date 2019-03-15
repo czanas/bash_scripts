@@ -16,7 +16,8 @@ ssh-keygen -t rsa -b 4096 -C "email@email.com"
 #this will generate public and private ssh key. 
 #You can use the public key for authentication in
 # ~/.ssh/id_rsa.pub
-
+Loging without public key
+ssh -o PubkeyAuthentication=no username@hostname.com
 
 #Useful tool for connecting network drive on windows via ssh
 https://github.com/billziss-gh/sshfs-win
